@@ -14,13 +14,13 @@ class MangaForFreeFactory : SourceFactory {
         MangaForFreeALL(),
     )
 }
-class MangaForFreeEN : MangaForFree("MangaForFree.net", "https://mangaforfree.net", "en") {
+class MangaForFreeEN : MangaForFree("MangaForFree.net", "https://mangaforfree.com", "en") {
     override fun chapterListSelector() = "li.wp-manga-chapter:not(:contains(Raw))"
 }
-class MangaForFreeKO : MangaForFree("MangaForFree.net", "https://mangaforfree.net", "ko") {
+class MangaForFreeKO : MangaForFree("MangaForFree.net", "https://mangaforfree.com", "ko") {
     override fun chapterListSelector() = "li.wp-manga-chapter:contains(Raw)"
 }
-class MangaForFreeALL : MangaForFree("MangaForFree.net", "https://mangaforfree.net", "all")
+class MangaForFreeALL : MangaForFree("MangaForFree.net", "https://mangaforfree.com", "all")
 
 abstract class MangaForFree(
     override val name: String,
